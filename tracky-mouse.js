@@ -839,14 +839,7 @@ TrackyMouse.init = function (div) {
 			TrackyMouse.useCamera();
 			return;
 		}
-		paused = !paused;
-		if (paused) {
-			startStopButton.textContent = "Start";
-			startStopButton.setAttribute("aria-pressed", "false");
-		} else {
-			startStopButton.textContent = "Stop";
-			startStopButton.setAttribute("aria-pressed", "true");
-		}
+		handleShortcut("toggle-tracking");
 	};
 
 	if (!(navigator.mediaDevices && navigator.mediaDevices.getUserMedia)) {
@@ -1562,6 +1555,13 @@ TrackyMouse.init = function (div) {
 			mouseNeedsInitPos = true;
 			if (paused) {
 				pointerEl.style.display = "none";
+			}
+			if (paused) {
+				startStopButton.textContent = "Start";
+				startStopButton.setAttribute("aria-pressed", "false");
+			} else {
+				startStopButton.textContent = "Stop";
+				startStopButton.setAttribute("aria-pressed", "true");
 			}
 			if (window.notifyToggleState) {
 				window.notifyToggleState(!paused);
