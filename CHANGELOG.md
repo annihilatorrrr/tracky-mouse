@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Start/stop button (this doesn't affect dwell clicking for now, only mouse movement, except in the desktop app?)
 - Desktop app now supports dwell clicking. This means you can use Tracky Mouse with lots of software not designed with head tracking in mind. I just played a game of Mahjongg, and it worked well.
 - Desktop app now remembers the window size and position.
 - Desktop app lets you regain manual control by simply moving the mouse, pausing temporarily, and resuming.
