@@ -71,6 +71,7 @@ TODO: copy from brainstorming section and remove unused options
 - eyes: 👀, 
 - closed eyes: 🫣, 🙈, 🫣👀, 🙈👀
 - neck: 🦒, 🦕
+- head: 🧑
 
 ### Objects
 

@@ -6,7 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-No changes here yet.
+### Fixed
+- Fixed a couple translations in the Emoji locale
 
 ## [2.9.0] - 2026-06-02
 
