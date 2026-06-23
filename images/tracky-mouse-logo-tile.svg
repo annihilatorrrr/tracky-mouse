@@ -12,6 +12,7 @@
    inkscape:export-ydpi="384"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -26,13 +27,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="8"
-     inkscape:cx="10.1875"
-     inkscape:cy="17.5625"
+     inkscape:zoom="16"
+     inkscape:cx="12.46875"
+     inkscape:cy="20.71875"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g3"
      inkscape:document-rotation="0"
-     showgrid="false"
+     showgrid="true"
      inkscape:window-width="1920"
      inkscape:window-height="946"
      inkscape:window-x="1366"
@@ -52,7 +53,7 @@
        spacingy="1"
        spacingx="1"
        units="px"
-       visible="false" />
+       visible="true" />
   </sodipodi:namedview>
   <metadata
      id="metadata13">
@@ -69,7 +70,8 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-9.5164804,84.123528)">
+     transform="translate(-9.5164804,84.123528)"
+     style="display:inline">
     <g
        id="use2-6"
        transform="matrix(0.82048951,0.63081124,-0.57600811,0.77593632,6.4144285,-22.617714)" />
@@ -280,5 +282,64 @@
     <g
        id="use10-8"
        transform="matrix(0.82048951,0.63081124,-0.57600811,0.77593632,28.440029,-88.054295)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     style="display:none">
+    <g
+       id="g3"
+       inkscape:label="Tracky Mouse logo cursor"
+       style="display:inline">
+      <path
+         style="opacity:1;fill:#ffff00;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:normal"
+         d="M 6.4835195,23.123528 22.483519,0.12352753 l 7,31.00000047 -9,-7 1,8 h -7 l -1.043468,-8.988546 z"
+         id="path1"
+         inkscape:label="arrow"
+         sodipodi:nodetypes="cccccccc" />
+      <circle
+         style="opacity:1;fill:#000000;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:normal"
+         id="path2"
+         cx="17.781263"
+         cy="12.115312"
+         r="1.9917841"
+         inkscape:label="eye" />
+      <circle
+         style="fill:#000000;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:normal"
+         id="path2-6"
+         cx="21.781263"
+         cy="15.115313"
+         r="1.9917841"
+         inkscape:label="eye" />
+      <path
+         style="opacity:1;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:normal"
+         d="m 12.483519,14.123528 c 3.465503,5.455413 7.81573,6.185572 11.172223,5.084475"
+         id="path3"
+         sodipodi:nodetypes="cc"
+         inkscape:label="mouth" />
+    </g>
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g3"
+       id="use4"
+       transform="rotate(180,13.983519,27.623528)"
+       inkscape:label="cursor clone bottom" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g3"
+       id="use4-5"
+       transform="rotate(180,13.961785,11.129255)"
+       style="display:inline"
+       inkscape:label="cursor clone top" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#g3"
+       id="use5"
+       transform="translate(-22)"
+       inkscape:label="cursor clone left" />
   </g>
 </svg>
