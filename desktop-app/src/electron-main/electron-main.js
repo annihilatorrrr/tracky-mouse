@@ -1013,7 +1013,6 @@ app.on("second-instance", (_event, uselessCorruptedArgv, workingDirectory, addit
 				logToCLI("The app window is not open.");
 				return;
 			}
-			// TODO: differentiate between --start and --stop
 			if (enabled !== !!args.start) {
 				appWindow.webContents.send("shortcut", "toggle-tracking");
 				logToCLI(`Toggled head tracking to ${enabled ? "off" : "on"}.`);
