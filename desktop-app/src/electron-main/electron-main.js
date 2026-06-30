@@ -983,8 +983,7 @@ app.on("second-instance", (_event, uselessCorruptedArgv, workingDirectory, addit
 		if (argv.length === 0) {
 			// TODO: DRY with `activate` event handler?
 			if (BrowserWindow.getAllWindows().length === 0) {
-				logToCLI("Opening new app window in already-running application.");
-				createWindow();
+				logToCLI("The app is likely already launching.");
 			} else if (appWindow) {
 				logToCLI("Focusing the existing app window.");
 				if (appWindow.isMinimized()) {
@@ -1053,9 +1052,13 @@ app.on('window-all-closed', () => {
 app.on('activate', () => {
 	// On OS X it's common to re-create a window in the app when the
 	// dock icon is clicked and there are no other windows open.
-	if (BrowserWindow.getAllWindows().length === 0) {
-		createWindow();
-	}
+	// That said, we don't want to doubly create the window if the app is already launching,
+	// and BrowserWindow.getAllWindows().length === 0 is not a sufficient check for that.
+	// Currently (and I don't see a reason to change this) we don't leave the app running on macOS without a window,
+	// so we don't need to handle recreating the windows.
+	// if (BrowserWindow.getAllWindows().length === 0) {
+	// 	createWindow();
+	// }
 });
 
 ipcMain.handle('openCameraSettings', async (_event, cameraDeviceName) => {
